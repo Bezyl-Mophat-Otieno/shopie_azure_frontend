@@ -60,6 +60,6 @@ main.addEventListener("click", (e) => {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
     window.location.href =
-      "http://127.0.0.1:5500/frontend/user-dashboard/cart/index.html";
+      "https://witty-cliff-015ff9e10.3.azurestaticapps.net/user-dashboard/cart/index.html";
   }
 });

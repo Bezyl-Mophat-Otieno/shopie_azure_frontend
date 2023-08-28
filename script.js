@@ -68,10 +68,10 @@ loginBtn.addEventListener("click", async (e) => {
         localStorage.setItem("user_id", data.user.id);
         if (data?.user?.role === "admin") {
           window.location.href =
-            "http://127.0.0.1:5500/frontend/admin-dashboard/index.html";
+            "https://witty-cliff-015ff9e10.3.azurestaticapps.net/admin-dashboard/index.html";
         } else {
           window.location.href =
-            "http://127.0.0.1:5500/frontend/user-dashboard/index.html";
+            "https://witty-cliff-015ff9e10.3.azurestaticapps.net/user-dashboard/index.html";
         }
       }
     } else {

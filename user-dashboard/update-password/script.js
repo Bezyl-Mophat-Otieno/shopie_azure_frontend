@@ -8,7 +8,7 @@ window.onload = () => {
   const token = localStorage.getItem("reset_token");
   if (token == null || token == "") {
     window.location.href =
-      "http://127.0.0.1:5500/frontend/user-dashboard/reset-password/index.html ";
+      "https://witty-cliff-015ff9e10.3.azurestaticapps.net/reset-password/index.html ";
   }
 };
 const verifyInputs = () => {
@@ -57,7 +57,7 @@ setBtn.addEventListener("click", async () => {
           alert.innerHTML = "";
         }, 3000);
         window.location.href =
-          "http://127.0.0.1:5500/frontend/authentication-page/login/index.html";
+          "https://witty-cliff-015ff9e10.3.azurestaticapps.net/index.html";
       }
     }
   } catch (error) {

@@ -9,7 +9,7 @@ window.onload = async () => {
   console.log(typeof token);
   if (token == null || token == "") {
     window.location.href =
-      "http://127.0.0.1:5500/frontend/authentication-page/login/index.html";
+      "https://witty-cliff-015ff9e10.3.azurestaticapps.net/index.html";
   }
   await fetchCart();
   const username = localStorage.getItem("loggedUser");
@@ -47,7 +47,7 @@ const paypalCheckOut = async (total) => {
       async createOrder() {
         try {
           const response = await fetch(
-            "http://localhost:5000/api/v1/orders/create-paypal-order",
+            "shopieapi.azurewebsites.net/api/v1/orders/create-paypal-order",
             {
               method: "POST",
               headers: {
@@ -74,7 +74,7 @@ const paypalCheckOut = async (total) => {
       async onApprove(data) {
         try {
           const response = await fetch(
-            "http://localhost:5000/api/v1/orders/capture-paypal-order",
+            "shopieapi.azurewebsites.net/api/v1/orders/capture-paypal-order",
             {
               method: "POST",
               headers: {

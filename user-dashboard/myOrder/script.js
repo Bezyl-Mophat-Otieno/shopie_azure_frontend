@@ -5,7 +5,7 @@ window.onload = async () => {
   console.log(typeof token);
   if (token == null || token == "") {
     window.location.href =
-      "http://127.0.0.1:5500/frontend/authentication-page/login/index.html";
+      "https://witty-cliff-015ff9e10.3.azurestaticapps.net/index.html";
   }
   profile.innerHTML = localStorage.getItem("loggedUser");
 };

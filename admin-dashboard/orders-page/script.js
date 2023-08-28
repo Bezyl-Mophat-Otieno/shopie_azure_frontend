@@ -13,7 +13,7 @@ window.onload = async () => {
   console.log(typeof token);
   if (token == null || token == "") {
     window.location.href =
-      "http://127.0.0.1:5500/frontend/authentication-page/login/index.html";
+      "https://witty-cliff-015ff9e10.3.azurestaticapps.net/index.html";
   }
 };
 logout.addEventListener("click", () => {
@@ -62,6 +62,6 @@ logout.addEventListener("click", () => {
 ordersHtml.addEventListener("click", (e) => {
   if (e.target.classList.contains("view-button")) {
     const id = e.target.parentElement.parentElement.children[1].textContent;
-    window.location.href = `http://127.0.0.1:5500/frontend/admin-dashboard/singleOrder/index.html?id=${id}`;
+    window.location.href = `https://witty-cliff-015ff9e10.3.azurestaticapps.net/admin-dashboard/singleOrder/index.html?id=${id}`;
   }
 });
