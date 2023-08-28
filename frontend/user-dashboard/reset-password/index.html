@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Outfit:wght@400;700&family=Poppins:wght@100;200;300&family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Reset -KO</title>
+  </head>
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <img src="../../assets/images/Black.png" alt="" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="../../authentication-page/login/index.html">Home</a></li>
+          <li><a href="../authentication-page/login/index.html">Login</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main">
+      <div class="form-container">
+        <div class="alertContainer"></div>
+        <input type="email" class="email" placeholder="Enter Your Email" />
+        <button class="confirmBtn">CONFIRMATION</button>
+        <p class="login-link">
+          Do you have an account?
+          <a
+            href="http://127.0.0.1:5500/frontend/authentication-page/login/index.html"
+            >Login</a
+          >
+        </p>
+      </div>
+      <div class="brand">
+        <img
+          src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHN0eWxpc3RpYyUyMHNob2VzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+          alt=""
+          class="brand-img"
+        />
+      </div>
+    </div>
+    <script>
+      const logo = document.querySelector(".logo");
+      logo.addEventListener("click", () => {
+        window.location.href = "../../authentication-page/login/index.html";
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
