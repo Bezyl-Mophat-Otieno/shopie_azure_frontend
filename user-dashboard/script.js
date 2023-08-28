@@ -127,6 +127,6 @@ productContainer.addEventListener("click", async (e) => {
   // clicking the image to view the product
   if (e.target.classList.contains("product-img")) {
     const productId = e.target.parentElement.id;
-    window.location.href = `http://127.0.0.1:5500/frontend/user-dashboard/single-product/index.html?id=${productId}`;
+    window.location.href = `https://witty-cliff-015ff9e10.3.azurestaticapps.net/user-dashboard/single-product/index.html?id=${productId}`;
   }
 });
